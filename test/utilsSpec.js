@@ -32,4 +32,15 @@ describe("Utils", function(){
       expect(result).to.equal(expected);
     });
   });
+  
+  describe("#sumOf(array, begin, end)", function(){
+    it("should return sum of array from begin to end index", function(){
+      var array = new Array(1,3,6,2,4);
+      var expected = 11;
+      var result = utils.sumOf(array, 1, 3);
+      
+      expect(result).to.be.a("number");
+      expect(result).to.equal(expected);
+    });
+  });
 });
