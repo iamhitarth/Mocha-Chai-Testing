@@ -13,8 +13,6 @@ process.stdin.on('data', function (data) {
     
     //If array is not undefined, then go ahead with processing
     if (typeof array != 'undefined'){
-        console.log("Array: " + array);
-        
         //Find center of the array and use that as the initial pivot
         var initialPivot = utils.indexOfCenter(array);
         
