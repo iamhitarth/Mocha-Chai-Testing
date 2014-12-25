@@ -2,7 +2,7 @@ var expect = require("chai").expect;
 var utils = require("../lib/utils.js");
 
 describe("Utils", function(){
-  describe("#parseToArray()", function(){
+  describe("#parseToArray(args)", function(){
     it("should parse inputs correctly in to an array of numbers", function(){
       var args = "1,3,6,2,4";
       var expected = new Array(1,3,6,2,4);
