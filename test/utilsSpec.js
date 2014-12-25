@@ -11,6 +11,14 @@ describe("Utils", function(){
       expect(result).to.be.an("array");
       expect(result).to.eql(expected);
     });
+    
+    it("should return undefined for non numeric elements in array", function(){
+      var args = "12,3,4,t,5";
+      var expected = undefined;
+      var result = utils.parseToArray(args);
+      
+      expect(result).to.equal(undefined);
+    });
   });
 
   describe("#indexOfCenter(array)", function(){
