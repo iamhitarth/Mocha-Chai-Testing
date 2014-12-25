@@ -17,13 +17,10 @@ process.stdin.on('data', function (data) {
         
         //Find center of the array and use that as the initial pivot
         var initialPivot = utils.indexOfCenter(array);
-        console.log("Initial pivot: " + initialPivot);
         
         //Using the initial pivot, find sums of left and right side of array
         var sumLeft = utils.sumOf(array, 0, initialPivot-1);
-        console.log("Initial sum left: " + sumLeft);
         var sumRight = utils.sumOf(array, initialPivot+1, array.length-1);
-        console.log("Initial sum right: " + sumRight);
         
         //Using the initial pivot, sum of left side and sum of right side, find pivot
         var pivot = utils.findPivot(array, initialPivot, sumLeft, sumRight);
