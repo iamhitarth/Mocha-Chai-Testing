@@ -1,4 +1,4 @@
-Mocha-Chai-Testing
+mocha-chai-testing
 ========
 Small test utility that finds pivot of a given numerical array and uses Mocha + Chai for testing. 
 
