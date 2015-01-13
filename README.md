@@ -1,6 +1,6 @@
-gumroad1
+Mocha-Chai-Testing
 ========
-Small test utility that finds pivot of a given numerical array. 
+Small test utility that finds pivot of a given numerical array and uses Mocha + Chai for testing. 
 
 A pivot is an element in the array that is located at an index such 
 that the sum of elements to its left, equals sum of elements to it's right.
